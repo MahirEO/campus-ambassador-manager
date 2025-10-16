@@ -1,0 +1,381 @@
+/**
+ * Styles for Campus Ambassador Manager
+ * Provides styling for forms, admin dashboard, and ambassador cards
+ * 
+ * @package Campus_Ambassador_Manager
+ */
+
+/* === Form Styles === */
+.cam-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cam-form-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cam-form-description {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* === Form Messages === */
+.cam-form-messages {
+    margin-bottom: 20px;
+}
+
+.cam-error-message {
+    background: #ffebee;
+    border-left: 4px solid #f44336;
+    padding: 15px;
+    border-radius: 4px;
+    color: #c62828;
+}
+
+.cam-error-message ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.cam-error-message li {
+    margin: 5px 0;
+}
+
+.cam-success-message {
+    background: #e8f5e9;
+    border-left: 4px solid #4caf50;
+    padding: 15px;
+    border-radius: 4px;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+/* === Form Fields === */
+.cam-form-field {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cam-form-label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.cam-form-label .required {
+    color: #f44336;
+}
+
+.cam-form-input,
+.cam-form-textarea,
+.cam-form-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.cam-form-input:focus,
+.cam-form-textarea:focus,
+.cam-form-select:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.cam-form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.cam-input-error {
+    border-color: #f44336 !important;
+}
+
+.cam-field-error {
+    display: block;
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.cam-field-focused {
+    /* Animation when field is focused */
+}
+
+.cam-field-filled {
+    /* Style when field has content */
+}
+
+/* === Character Counter === */
+.cam-char-counter {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.cam-char-counter-error {
+    color: #f44336;
+    font-weight: 600;
+}
+
+/* === Submit Button === */
+.cam-submit-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cam-submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.cam-submit-button:active {
+    transform: translateY(0);
+}
+
+.cam-submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* === Admin Dashboard Styles === */
+.cam-dashboard {
+    padding: 20px;
+}
+
+.cam-dashboard h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cam-dashboard .subsubsub {
+    margin-bottom: 20px;
+}
+
+.cam-dashboard table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cam-dashboard th,
+.cam-dashboard td {
+    padding: 12px;
+    text-align: left;
+}
+
+.cam-dashboard th {
+    background: #f5f5f5;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+}
+
+.cam-dashboard td {
+    border-bottom: 1px solid #eee;
+}
+
+.cam-dashboard tr:hover {
+    background: #fafafa;
+}
+
+/* === Status Badges === */
+.cam-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cam-status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.cam-status-verified {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.cam-status-approved {
+    background: #d4edda;
+    color: #155724;
+}
+
+.cam-status-rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* === Ambassador Cards === */
+.cam-ambassador-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cam-ambassador-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cam-ambassador-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cam-ambassador-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cam-ambassador-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.cam-ambassador-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.cam-ambassador-university {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0 0;
+}
+
+.cam-ambassador-details {
+    margin-top: 15px;
+}
+
+.cam-ambassador-detail-item {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.cam-ambassador-detail-label {
+    font-weight: 600;
+    color: #333;
+    margin-right: 5px;
+}
+
+.cam-ambassador-detail-value {
+    color: #666;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .cam-form-container {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .cam-form-title {
+        font-size: 24px;
+    }
+    
+    .cam-dashboard table {
+        font-size: 14px;
+    }
+    
+    .cam-dashboard th,
+    .cam-dashboard td {
+        padding: 8px;
+    }
+    
+    .cam-ambassador-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .cam-form-container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .cam-submit-button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+/* === Loading Animation === */
+.cam-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: cam-spin 0.8s linear infinite;
+}
+
+@keyframes cam-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* === Utility Classes === */
+.cam-text-center {
+    text-align: center;
+}
+
+.cam-mt-20 {
+    margin-top: 20px;
+}
+
+.cam-mb-20 {
+    margin-bottom: 20px;
+}
+
+.cam-hidden {
+    display: none;
+}
