@@ -1,0 +1,158 @@
+/**
+ * Admin Styles for Campus Ambassador Manager
+ * 
+ * @package Campus_Ambassador_Manager
+ * @subpackage Admin
+ * @version 1.0.0
+ */
+
+/* ====================================
+   Dashboard Styles
+   ==================================== */
+
+.cam-dashboard-wrapper {
+    padding: 20px;
+}
+
+.cam-dashboard-stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.cam-stat-box {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.cam-stat-box h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.cam-stat-box .stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+/* ====================================
+   Settings Page Styles
+   ==================================== */
+
+.cam-settings-wrapper {
+    max-width: 800px;
+}
+
+.cam-settings-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cam-settings-section h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* ====================================
+   Form Styles
+   ==================================== */
+
+.cam-form-table {
+    width: 100%;
+}
+
+.cam-form-table th {
+    width: 200px;
+    text-align: left;
+    padding: 15px 10px;
+    font-weight: 600;
+}
+
+.cam-form-table td {
+    padding: 15px 10px;
+}
+
+/* ====================================
+   Table Styles
+   ==================================== */
+
+.cam-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.cam-data-table thead {
+    background: #f5f5f5;
+}
+
+.cam-data-table th,
+.cam-data-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cam-data-table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+/* ====================================
+   Button Styles
+   ==================================== */
+
+.cam-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cam-btn:hover {
+    background: #005a87;
+    color: #fff;
+}
+
+.cam-btn-secondary {
+    background: #666;
+}
+
+.cam-btn-secondary:hover {
+    background: #444;
+}
+
+/* ====================================
+   Utility Classes
+   ==================================== */
+
+.cam-mt-20 {
+    margin-top: 20px;
+}
+
+.cam-mb-20 {
+    margin-bottom: 20px;
+}
+
+.cam-text-center {
+    text-align: center;
+}
+
+.cam-text-right {
+    text-align: right;
+}
