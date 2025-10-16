@@ -1,0 +1,34 @@
+/**
+ * Public Styles
+ *
+ * @package Campus_Ambassador_Manager
+ */
+
+/* Form Styles */
+.campus-ambassador-form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.campus-ambassador-form input,
+.campus-ambassador-form textarea,
+.campus-ambassador-form select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.campus-ambassador-form button {
+	background-color: #0073aa;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Image Preview */
+.image-preview {
+	max-width: 300px;
+	margin: 10px 0;
+}
